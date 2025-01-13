@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color:blue;   */
+   overflow: hidden;
+}
+.navhidden{
+    width: 9px;
+    height: 2px;
+    border: 5px solid white;
+
+}
+.navline{
+    display: none;
+}
+.navline img{
+    width: 34px;
+    height: 34px;
+    margin: 9px;
+}
+.navBar{
+    overflow-y: hidden;
+    width: 100vw;
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+    position: sticky;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.navcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    padding: 12px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 23px;
+    font-weight: 900;
+   
+}
+.navcont a {
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 0, 0);
+}
+.navcont :hover {
+    list-style: none;
+    cursor: pointer;
+    text-shadow: 9px;
+}
+.navcont button {
+    border-radius: 9px;
+    border: 3px solid black;
+    /* background-color: rgb(51, 29, 150); */
+}
+.crd{
+    color: white;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+@media only screen and (max-width: 768px) {
+    *{
+        overflow:auto;
+    }
+    .navBar{
+        display: none;
+        height: 50%;
+        /* display:flex; */
+        flex-direction: column;
+        /* position: absolute; */
+        
+    }
+    .navBar.active{
+        display: block;
+    }
+    .navline{
+        display: block;
+        
+    }
+    .logo{
+         margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navcont{
+        display: flex;
+    flex-direction: column;
+    }
+   .cont{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .leftside{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    height: 60%;
+    width: 90vw;
+   }
+   .intro{
+    margin-top:20% ;
+   }
+.maincont{
+    margin-left: auto;
+    margin-right: auto;
+}
+}

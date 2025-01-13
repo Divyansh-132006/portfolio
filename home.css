@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* background-color: blue;   */
+}
+.navhidden{
+    width: 9px;
+    height: 2px;
+    border: 5px solid white;
+
+}
+.navline{
+    display: none;
+}
+.navline img{
+    width: 34px;
+    height: 34px;
+    margin: 9px;
+
+}
+.navBar{
+    width: 100vw;
+    height: 74px;
+    display: flex;
+    justify-content: space-around;
+    position: fixed;
+}
+.logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+.navcont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    padding: 12px;
+    text-align: center;
+    list-style-type: none;
+    font-size: 23px;
+    font-weight: 900;
+}
+.navcont a {
+    text-decoration: none;
+    list-style: none;
+    color: #000;
+    /* color: white; */
+}
+.navcont :hover {
+    list-style: none;
+    cursor: pointer;
+    text-shadow: 9px;
+}
+.navcont button {
+    border-radius: 9px;
+    border: 3px solid black;
+    /* background-color: rgb(51, 29, 150); */
+}
+.cont {
+    /* width: 100vw;
+    height: 100vh; */
+    display: flex;
+  
+}
+.leftside {
+    width: 50%;
+    height: 100%;
+}
+.intro{
+    margin-left: 17px;
+    margin-right: auto;
+    margin-top: 30%;
+    font-size: 1rem;
+    font-weight: 700;
+    color: wheat; 
+}
+.btn{
+    width: 7rem;
+    height: 3rem;
+    border: 3px solid white;
+    border-radius: 14px;
+    color: rgba(15, 86, 201, 0.285);
+    font-size:23px;
+    font-weight: 800;
+    margin: 18px;
+    text-align: center;
+    color: white;
+}
+.rightside {
+    width: 50%;
+    height: 100%;
+}
+.rightside img {
+    width: 18rem;
+    height: 18rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 6px solid white;
+    margin-top: 30%;
+    border-radius: 50px;
+    object-fit: cover;
+}
+.rightside img:hover{
+    width: 24rem;
+    height: 24rem;
+}
+.btn a{
+/* list-style: none; */
+color: white;
+text-decoration: none;
+}
+#background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+ }
+
+@media only screen and (max-width: 768px) {
+    .navBar{
+        display: none;
+        height: 50%;
+        /* display:flex; */
+        flex-direction: column;
+        position: absolute;
+        
+    }
+    .navBar.active{
+        display: block;
+    }
+    .navline{
+        display: block;
+        
+    }
+    .logo{
+         margin-left: auto;
+        margin-right: auto;
+    }
+
+    .navcont{
+        display: flex;
+    flex-direction: column;
+    }
+   .cont{
+    display: flex;
+    flex-direction: column-reverse;
+   }
+   .leftside{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3%;
+    height: 60%;
+    width: 90vw;
+   }
+   .intro{
+    margin-top:20% ;
+   }
+   .rightside{
+    margin-left:15%;
+    margin-right: 65%;
+    margin-top: 1%;
+    height: 60%;
+   }
+   .rightside img:hover{
+    width: 19rem;
+    height: 19rem;
+}
+.contain{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.circle{
+    margin: 9px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: white;
+}
+.circle a{
+    text-decoration: none;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:8px ;
+    color: white;
+}
+.contain{
+    display: none;
+}
+.contain.show{
+    display: block flex;
+
+}
+}
+.contain{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.circle{
+    margin: 9px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border: 2px solid black;
+    color: white;
+}
+.circle a{
+    text-decoration: none;
+    font-size: 23px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:8px ;
+    color: white;
+}
+.contain{
+    display: none;
+}
+.contain.show{
+    display: block flex;
+
+}
